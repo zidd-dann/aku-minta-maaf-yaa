@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaf Ya 🙈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img class="emoji" src="plis.png" />
+        </div>
+        <h1>Heyy, aku minta maaf yaa..</h1>
+        <div class="button">
+            <button class="btn yes"><a href="maaciiiiw.html">Iyaa, dimaafin</a></button>
+            <button class="btn no" id="noBtn">Ga dimaafin</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("noBtn").addEventListener("mouseover", function() {
+            let x = Math.random() * window.innerWidth - 100;
+            let y = Math.random() * window.innerHeight - 50;
+            this.style.left = `${x}px`;
+            this.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>
